@@ -7,14 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Warga extends Model
 {
     protected $fillable = [
-        'nik',
+        'wilayah',
         'nama',
-        'alamat',
-        'wilayah_id'
+        'nik',
+        'penghasilan',
+        'jumlah_tanggungan',
+        'kondisi_rumah'
     ];
-
-    public function wilayah()
-    {
-        return $this->belongsTo(Wilayah::class);
-    }
 }

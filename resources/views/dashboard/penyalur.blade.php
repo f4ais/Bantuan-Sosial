@@ -2,16 +2,16 @@
 
 @section('content')
 
-<h1>Daftar Bantuan</h1>
+<h1>Dashboard Penyalur</h1>
 
-<div class="card">
+<table>
 
-    <ul>
-        @foreach($bantuans as $bantuan)
-            <li>{{ $bantuan->nama_bantuan }}</li>
-        @endforeach
-    </ul>
+    <tr>
+        <th>No</th>
+        <th>Program Bantuan</th>
+        <th>Tahun</th>
+    </tr>
 
-</div>
+</table>
 
 @endsection

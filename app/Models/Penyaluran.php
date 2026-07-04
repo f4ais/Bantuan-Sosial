@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Penyaluran extends Model
 {
     protected $fillable = [
-        'status'
+        'warga_id',
+        'program_bantuan_id'
     ];
 }

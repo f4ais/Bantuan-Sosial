@@ -2,16 +2,16 @@
 
 @section('content')
 
-<h1>Daftar Survey</h1>
+<h1>Dashboard Surveyor</h1>
 
-<div class="card">
+<table>
 
-    <ul>
-        @foreach($surveys as $survey)
-            <li>{{ $survey->status }}</li>
-        @endforeach
-    </ul>
+    <tr>
+        <th>No</th>
+        <th>Nama Warga</th>
+        <th>Status Survey</th>
+    </tr>
 
-</div>
+</table>
 
 @endsection
