@@ -21,9 +21,7 @@ class ProgramBantuanController extends Controller
 
     public function store(Request $request)
     {
-        ProgramBantuan::create([
-            'nama_bantuan' => $request->nama_bantuan,
-        ]);
+        ProgramBantuan::create($request->all());
 
         return redirect('/bantuan');
     }
